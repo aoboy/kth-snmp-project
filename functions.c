@@ -31,6 +31,8 @@ ipRouteTable_t* createIPRouteTable(){
     ipRTable->ifIndex = 0;
     ipRTable->index   = 0;
     ipRTable->next    = NULL;
+	
+    return ipRTable;	
 }
 
 /**
@@ -49,6 +51,8 @@ ipAddrTable_t* createIPAddrTable(){
     iptable->ifSpeed = 0;
     iptable->ifDesc  = NULL;
     iptable->_next   = NULL;
+	
+    return iptable;
 }
 
 /**
